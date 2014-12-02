@@ -13,6 +13,7 @@ module.exports = (config) ->
 
     # list of files / patterns to load in the browser
     files: [
+      'bower_components/jquery/dist/jquery.js'
       'bower_components/angular/angular.js'
       'bower_components/angular-mocks/angular-mocks.js'
       'bower_components/firebase/firebase.js'
@@ -24,6 +25,9 @@ module.exports = (config) ->
       'bower_components/angular-sanitize/angular-sanitize.js'
       'bower_components/angular-touch/angular-touch.js'
       'bower_components/firebase-simple-login/firebase-simple-login.js'
+      'bower_components/jquery-ui/jquery-ui.js'
+      'bower_components/angular-ui-sortable/sortable.js'
+      'bower_components/angular-dragdrop/src/angular-dragdrop.min.js'
       'app/scripts/**/*.coffee'
       'app/scripts/angularFire/*.js'
       'app/scripts/directives/ngHideAuth.js'
