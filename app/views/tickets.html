@@ -1,5 +1,5 @@
 <div class="row tickets">
-<div class="todo drop-column" ng-model="todo"  data-drop="true" data-jqyoui-options jqyoui-droppable="{multiple:true}">
+<div class="todo drop-column" ng-model="todo"  data-drop="true" data-jqyoui-options jqyoui-droppable="{multiple:true}" ui-sortable="{ 'ui-floating': true }">
   <ng-include src="'/templates/ticket.html'" ng-repeat="ticket in todo"></ng-include>
 </div>
 <div class="in-progress drop-column"  ng-model="in_progress" data-drop="true" data-jqyoui-options jqyoui-droppable="{multiple:true}">

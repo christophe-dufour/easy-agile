@@ -18,5 +18,7 @@ angular
     'ngTouch',
     'firebase',
     'firebase.utils',
-    'simpleLogin','ngDragDrop'
+    'simpleLogin',
+    'ngDragDrop',
+    'ui.sortable'
   ])
