@@ -1,0 +1,12 @@
+<div class="row tickets">
+<div class="todo drop-column" ng-model="todo"  data-drop="true" data-jqyoui-options jqyoui-droppable="{multiple:true}" ui-sortable="{ 'ui-floating': true }">
+  <ng-include src="'/templates/ticket.html'" ng-repeat="ticket in todo"></ng-include>
+</div>
+<div class="in-progress drop-column"  ng-model="in_progress" data-drop="true" data-jqyoui-options jqyoui-droppable="{multiple:true}">
+  <ng-include src="'/templates/ticket.html'" ng-repeat="ticket in in_progress"></ng-include>
+</div>
+<div class="done drop-column"  ng-model="done"  data-drop="true" data-jqyoui-options jqyoui-droppable="{multiple:true}">
+  <ng-include src="'/templates/ticket.html'" ng-repeat="ticket in done"></ng-include>
+</div>
+</div>
+

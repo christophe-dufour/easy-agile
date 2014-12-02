@@ -99,6 +99,9 @@ angular.module("easyAgileApp").config([
     .when '/chat',
       templateUrl: 'views/chat.html'
       controller: 'ChatCtrl'
+    .when '/tickets',
+      templateUrl: 'views/tickets.html'
+      controller: 'TicketsCtrl'
     .otherwise redirectTo: "/"
 
 ]).run([

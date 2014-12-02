@@ -1,0 +1,29 @@
+$navbar-size: 50px !default;
+
+.drop-column{
+  padding-top: $navbar-size;
+  min-height: 100vh;
+}
+
+
+.todo, .in-progress, .done{
+  @extend .col-sm-4 !optional;
+}
+.todo{
+  background-color: red;
+}
+.in-progress{
+  background-color: blue;
+}
+.done{
+  background-color: green;
+}
+
+
+
+.drop-column{
+  .ticket-container{
+    @extend .col-lg-6 !optional;
+    margin-bottom: 15px;
+  }
+}
