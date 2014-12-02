@@ -1,17 +1,12 @@
 <div class="row tickets">
-<div class="todo drop-column">
-  <ng-include src="'/templates/ticket.html'"></ng-include>
-  <ng-include src="'/templates/ticket.html'"></ng-include>
-  <ng-include src="'/templates/ticket.html'"></ng-include>
-  <ng-include src="'/templates/ticket.html'"></ng-include>
-  <ng-include src="'/templates/ticket.html'"></ng-include>
-  <ng-include src="'/templates/ticket.html'"></ng-include>
-  <ng-include src="'/templates/ticket.html'"></ng-include>
-  <ng-include src="'/templates/ticket.html'"></ng-include>
-
-
+<div class="todo drop-column" ng-model="todo"  data-drop="true" data-jqyoui-options jqyoui-droppable>
+  <ng-include src="'/templates/ticket.html'" ng-repeat="ticket in todo"></ng-include>
 </div>
-<div class="in-progress drop-column"></div>
-<div class="done drop-column"></div>
+<div class="in-progress drop-column"  ng-model="in_progress" data-drop="true" data-jqyoui-options jqyoui-droppable>
+  <ng-include src="'/templates/ticket.html'" ng-repeat="ticket in in_progress"></ng-include>
+</div>
+<div class="done drop-column"  ng-model="done"  data-drop="true" data-jqyoui-options jqyoui-droppable>
+  <ng-include src="'/templates/ticket.html'" ng-repeat="ticket in done"></ng-include>
+</div>
 </div>
 
